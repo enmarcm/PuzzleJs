@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: calc(100% - 30px);
+    height: calc(100vh - 30px);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+}
+
+.puzzle, .piezas{
+    width: 400px;
+    height: 80%;
+    border: 3px dashed black;
+    margin: 0 20px;
+}
+
+.piezas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.pieza{
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 100%;
+}
+
+.puzzle{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: rgba(128, 128, 128, 0.405);
+    grid-gap: 1px;
+}
+
+.puzzle-item{
+    border: 1px solid black;
+}
+
+.hover{
+    background-color: rgb(56, 149, 149);
+}
